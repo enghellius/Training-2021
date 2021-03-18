@@ -1,0 +1,19 @@
+# @autor Anghel
+# Nos indica que de acuerdo al orden se le debe dar dulces
+# Entonces me base en la idea de (N(N+1))/2 para hacerlo
+# Por ello utilizo un contador para aumentar el numero de dulces de acuerdo al orden de cada niño
+
+niños = input()
+niños = int(niños)
+
+#print((numeros*(numeros+1))/2)
+
+numeros = 1
+contador = 0
+
+for i in range(niños):
+
+    contador += numeros
+    numeros += 1
+
+print(contador)
